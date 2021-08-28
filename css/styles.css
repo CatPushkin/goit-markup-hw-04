@@ -110,16 +110,26 @@ button {
   margin-right: 50px;
 }
 .header-item-link {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-item-link:hover,
 .header-item-link:focus {
   color: var(--accent-color);
+}
+.header-item-link:hover .contact-icon,
+.header-item-link:focus .contact-icon {
+  fill: currentColor;
+}
+.contact-icon {
+  margin-right: 10px;
+  fill: #757575;
 }
 /* -------------------MAIN SECTION--------------------- */
 
@@ -204,6 +214,19 @@ button {
 .section-work {
   padding-bottom: 94px;
 }
+.reason-list-logo {
+  display: block;
+  height: 120px;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 30px;
+}
+.reason-logo {
+  width: 70px;
+  height: 70px;
+}
 
 .work-list {
   display: flex;
@@ -215,6 +238,7 @@ button {
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
 .work-title,
 .team-title {
@@ -242,11 +266,10 @@ button {
   margin-right: 0;
 }
 .member {
-  padding: 30px 59px;
+  padding: 30px 32px;
   text-align: center;
 }
 .team-member {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -258,9 +281,68 @@ button {
 .team-member-expert {
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: #ffffff;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+.social-icon {
+  fill: #afb1b8;
+}
+
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+.clients-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+}
+.clients-icon {
+  fill: #afb1b8;
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
 }
 
 /* -----------PORTFOLIO LIST---------- */
